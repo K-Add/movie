@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影院</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="#">垃圾影视</a>
+            </div>
+            <div class="nav">
+                <a href="#" class="nav-link">电影</a>
+                <a href="#" class="nav-link">电视剧</a>
+                <a href="#" class="nav-link">综艺</a>
+                <a href="#" class="nav-link">动漫</a>
+            </div>
+            <div class="movie-add iconfont" id="movie-add">&#xe604;</div>
+        </div>
+    </header>
+    <div class="main container">
+        <ul id="movie-list">
+            <!-- <li class="movie-item-li" data-index="1">
+                <div class="movie-wrapper">
+                    <span class="delete" id="delete"></span>
+                    <div>
+                        <a href="#">
+                            <img src="https://pic2.iqiyipic.com/image/20201112/36/c7/v_128042334_m_601_m10_260_360.webp"
+                                class="img-top" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <p class="info-name">
+                            <a href="#" class="info-name-link">花木兰</a>
+                        </p>
+                        <p class="info-time ">2020-09-11</p>
+                    </div>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    <div class="mask" id="mask">
+        <div class="pop-up">
+            <div class="pop-up-title">添加电影</div>
+            <div class="pop-up-input">
+                <div class="input-content">
+                    <label for="poster-link">海报链接：</label>
+                    <input type="text" id="poster-link">
+                </div>
+                <div class="input-content">
+                    <label for="movie-name">电影名：</label>
+                    <input type="text" id="movie-name">
+                </div>
+                <div class="input-content">
+                    <label for="movie-time">上映时间：</label>
+                    <input type="text" id="movie-time">
+                </div>
+            </div>
+            <div class="pop-up-btns">
+                <input type="button" value="取消" class="btn-cancel" id="btn-cancel">
+                <input type="button" value="确认" class="btn-confirm" id="btn-confirm">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
